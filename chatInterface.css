@@ -20,12 +20,42 @@ body {
     user-select: none;
 }
 
+#spin-button{
+	background-color: #D81159;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    margin: auto;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    width: 100px;
+    height: 80px;
+    left: 50px;
+    border-radius: 6px;
+
+}
+#user-compatibility-info{
+    font-family: Slack-Lato,appleLogo,sans-serif;
+}
+
+#user-compatibility-info{
+	font-size: 14px;
+	padding: 5px;
+	display: block;
+}
+
 #profile-pic{
 	display: block;
 	margin: 0 auto;
+	margin-bottom: 10px;
 	width: 180px;
 	height: 180px;
 }
+
 #chattie-user-name{
 	display: block;
 	text-align: center;
@@ -34,10 +64,7 @@ body {
 	margin-right: 10px;
 }
 
-.chatter{
-    font-family: Slack-Lato,appleLogo,sans-serif;
-}
-.chatter:hover{
+#chattie-user-name:hover{
 	background-color: #D81159;
     display: block;
     border-top-right-radius: .25rem;
@@ -89,14 +116,20 @@ Footer Stuff
 */
 #footer{
 	position: fixed;
-	left: 220px;
 	bottom: 0px;
-	right: 10px;
+	right: 0px;
 	height: 100px;
+	left: 0px;
+	display: block;
 }
 
 #message-form{
-	position: relative;
+	position: absolute;
+	left: 220px;
+	right: 20px;
+	bottom: 20px;
+	top: 0px;
+	display: block;
 }
 
 /*#message-input-container{
@@ -104,12 +137,11 @@ Footer Stuff
 	width: 100%;
 }*/
 
-#message-input{
+/*#message-input{
 	overflow-y: hidden;
 	height: 100%;
-	width: 90%;
-	margin:0 auto;
-	right: 0px;
+	width: 100%;
+	margin:0px 20px 0px 20px;
 	left: 0px;
 	background: #fff;
     border: 2px solid #E0E0E0;
@@ -129,12 +161,42 @@ Footer Stuff
     resize: none;
     border-radius: 6px;
     display: block;
+
+}*/
+
+#message-input{
+background: #fff;
+    width: 100%;
+    font-size: .9375rem;
+    line-height: 1.2rem;
+    border: 2px solid #E0E0E0;
+    background-clip: padding-box;
+    font-family: Slack-Lato,appleLogo,sans-serif;
+    margin: 0;
+    color: #3d3c40;
+    -webkit-appearance: none;
+    box-shadow: none;
+    outline: 0;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    min-height: 2.625rem!important;
+    padding-top: .5625rem;
+    padding-bottom: .5625rem;
+    padding-left: .5rem;
+    padding-right: 2.5rem;
+    max-height: 10rem!important;
+    resize: none!important;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
-textarea {
+/*#textarea {
     font-size: 1rem;
     line-height: 1.25rem;
-    width: 100%;
     height: 108px;
     padding: .75rem .5rem .75rem .75rem;
     vertical-align: top;
@@ -142,4 +204,6 @@ textarea {
     -moz-tab-size: 4;
     -o-tab-size: 4;
     -webkit-tab-size: 4;
-}
+    position: absolute;
+    display: block;
+}*/

@@ -4,14 +4,16 @@
 </head>
 	<body>
 		<div id="info-bar">
-			<ul>
-				<li id="chatter-user-name" class="chatter">Chatter</li>
-				<li id="chattie-user-name" class="chatter">Chattie</li>
-			</ul>
-			<img src="User_Profile_Picture.png" alt="User Profile Picture" id="profile-pic">
-			<span id="chattie-user-name" class="chatter">
-				John Doe
-			</span>
+			<div id="chattie-user-info">
+				<img src="User_Profile_Picture.png" alt="User Profile Picture" id="profile-pic">
+				<span id="chattie-user-name">
+					Jane Doe
+				</span>
+				<span id="user-compatibility-info">
+					Also Like Dragons &#149 98% Fit
+				</span>
+			</div>
+			<button id="spin-button">Spin</button>
 		</div>
 		<div id="message-container">
 		<div id="msgs_scroller_div">
@@ -60,12 +62,11 @@
 			 replies
 			zero forty-seven PM.
 		</span>
-
 	</div>
-
 </ts-message>
 		</div>
-		<div id="footer">
+		</div>
+				<div id="footer">
 			<form id="message-form">
 				<textarea id="message-input"></textarea>
 			</form>
